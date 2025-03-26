@@ -1,0 +1,56 @@
+// global.scss
+body {
+    background-color: #141414;
+    color: white;
+    font-family: "Arial", sans-serif;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: #000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .nav-links a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+  }
+  
+  .nav-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .content {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .sidebar, .main-content {
+    background: #222;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .movies-list, .users-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .movie, .user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .movie img, .user img {
+    border-radius: 8px;
+    width: 50px;
+    height: 50px;
+  }
+  

@@ -1,0 +1,41 @@
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.card {
+    width: 160px;
+    height: 240px;
+    flex: 0 0 auto; /* Prevents shrinking */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+    cursor:none; /* Change cursor to hand */
+}
+.card:hover {
+    transform: scale(1.05); /* Makes it 1.05x bigger */
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    flex-wrap: nowrap;/* Prevent wrapping */
+    overflow-x: auto;/* Enables horizontal scrolling */
+    white-space: nowrap; /* Prevents items from breaking */
+    gap: 10px;
+    padding: 20px;
+}
+.contain {
+    display: inline-block; /* Allow content to be scrollable */
+    white-space: nowrap; /* Prevent content from wrapping to next line */
+  }
+  
+  .card {
+    display: inline-block;
+    padding: 10px;
+    margin-right: 10px; /* Add spacing between items */
+  }
+
+
+
