@@ -19,6 +19,7 @@ img {
 .container {
     display: flex;
     flex-wrap: wrap;
+    width: 4250px;
     justify-content:flex-start;
     flex-wrap: nowrap;/* Prevent wrapping */
     overflow-x: auto;/* Enables horizontal scrolling */
@@ -26,16 +27,54 @@ img {
     gap: 10px;
     padding: 20px;
 }
-.contain {
-    display: inline-block; /* Allow content to be scrollable */
-    white-space: nowrap; /* Prevent content from wrapping to next line */
+* {
+    box-sizing:content-box;
   }
   
-  .card {
-    display: inline-block;
-    padding: 10px;
-    margin-right: 10px; /* Add spacing between items */
+  html{
+    height:100%; /* allows body tag to take full height */
   }
+  
+  body {
+    margin:0 30px;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    background: #444;
+    color:#FFF;
+  }
+  
+  p {
+    text-align:center;
+    font-weight:bold;
+    font-family:Arial,san-serif;
+    text-transform:uppercase;
+  }
+  
+  .landing-wrapper {
+    width: 99.9%;
+    height: 280px;
+    margin: auto;
+    padding:0;
+    position: relative;
+    overflow:hidden;
+    border:1px solid #333;
+    cursor:pointer;
+  }
+  
+  .landing-inner-content {
+    background: #FFF;
+    width: 2620px;
+    height: 280px;
+  }
+  
 
-
+  .box:first-of-type {
+    margin-left:20px;
+  }
+  
+  .box:last-of-type {
+    margin-right:20px;
+  }
+  
 

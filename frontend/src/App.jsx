@@ -1,11 +1,15 @@
 import React from "react";
 import Home from "./components/HomePage"; // Change this to test different pages
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 function App() {
   return (
-    <div>
-      <Home />  {/* Replace Home with any other page to test it */}
-    </div>
+    <Router>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                {/* <Route path="/about" element={<About />} /> */}
+                {/* <Route path="/images" element={<ImageScroller />} /> */}
+            </Routes>
+        </Router>
   );
 }
 
